@@ -1,6 +1,6 @@
 name: app_style
 description: "A Flutter package providing predefined text app_style, border radius utilities, media query helpers, and padding constants for a consistent and reusable UI design."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/GenieCoderSrc/app_style
 repository: https://github.com/GenieCoderSrc/app_style
 issue_tracker: https://github.com/GenieCoderSrc/app_style/issues
