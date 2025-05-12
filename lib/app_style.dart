@@ -1,6 +1,3 @@
-library app_style;
-
-
 export 'app_txt_styles.dart';
 export 'border_radius_style.dart';
 export 'google_ubuntu_fonts_txt_styles.dart';
