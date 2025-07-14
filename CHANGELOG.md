@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.3+1
+
+### July 15, 2025
+
+* Added full usage example in `example/lib/main.dart`.
+* Updated [README.md](README.md)
+
+
 ## 0.0.3
 
 ### July 15, 2025

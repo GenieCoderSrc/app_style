@@ -11,9 +11,6 @@ A Flutter package that provides predefined styles for text, padding, border radi
 * Responsive layout helpers and themable structure.
 * Example usage available in `/example` folder.
 
-
----
-
 ## Installation
 
 Add the following line to your `pubspec.yaml`:
@@ -37,8 +34,6 @@ flutter pub get
 import 'package:app_style/app_style.dart';
 ```
 
----
-
 ### Text Styles
 
 Use predefined text styles for a consistent typography across your app.
@@ -49,8 +44,6 @@ Text(
   style: AppTextStyles.titleBig,
 );
 ```
-
----
 
 ### Border Radius
 
@@ -65,8 +58,6 @@ Container(
 );
 ```
 
----
-
 ### Media Query Helpers
 
 Get screen dimensions dynamically.
@@ -75,10 +66,6 @@ Get screen dimensions dynamically.
 double screenWidth = MediaQuerySizeHelper.width(context);
 double screenHeight = MediaQuerySizeHelper.height(context);
 ```
-
-
----
-
 
 ### Padding Constants
 
@@ -91,32 +78,20 @@ Padding(
 );
 ```
 
----
-
-
 ## Example
 
 See `example/lib/main.dart` for a complete demo of how to use the styles in a real Flutter screen.
 
-
----
-
 ## Contributions
 
 Contributions are welcome! Feel free to submit a pull request or open an issue.
-
-
----
 
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
----
-
-
 ## 👨‍💼 Author
 
-**reusable_list_item**
+**app_style**
 Developed with ❤️ by [Shohidul Islam](https://github.com/ShohidulProgrammer)
