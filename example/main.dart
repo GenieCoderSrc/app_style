@@ -1,5 +1,5 @@
-import 'package:app_style/app_style.dart';
 import 'package:flutter/material.dart';
+import 'package:app_style/app_style.dart'; // Ensure correct import for your package
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Styles Example',
+      title: 'App Style Example',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -25,28 +25,38 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuerySizeHelper.width(context);
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('Styles Demo', style: AppTxtStyles.kTitleWhite),
+        title: const Text(
+          'Styles Demo',
+          style: AppTextStyles.titleWhite,
+        ),
+        backgroundColor: Colors.blueAccent,
       ),
       body: Padding(
-        padding: PaddingConstant.appScreenPadding,
+        padding: PaddingConstants.appScreenPadding,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 20),
-            Text('Big Title', style: AppTxtStyles.kBigTitleTextStyle),
-            Text('Subtitle', style: AppTxtStyles.kSubTitleTextStyle),
+            const Text('Big Title', style: AppTextStyles.titleBig),
+            const SizedBox(height: 8),
+            const Text('Subtitle', style: AppTextStyles.subtitle),
             const SizedBox(height: 20),
             Container(
-              width: MediaQuerySize.getWidth(context) * 0.8,
+              width: width * 0.8,
               height: 100,
               decoration: BoxDecoration(
                 color: Colors.blueAccent,
-                borderRadius: BorderRadiusStyle.circularBorderRadius(radius: 20),
+                borderRadius: BorderRadiusStyle.all(radius: 20),
               ),
               child: const Center(
-                child: Text('Styled Container', style: TextStyle(color: Colors.white, fontSize: 18)),
+                child: Text(
+                  'Styled Container',
+                  style: AppTextStyles.white16,
+                ),
               ),
             ),
           ],

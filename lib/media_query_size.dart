@@ -1,14 +1,25 @@
 import 'package:flutter/widgets.dart';
 
-class MediaQuerySize {
-  static double width = screenSize.width;
-  static double height = screenSize.height;
+/// Provides responsive screen size helpers using MediaQuery.
+/// Always use these methods with a valid BuildContext.
+abstract class MediaQuerySizeHelper {
+  /// Returns screen width from [MediaQuery]
+  static double width(BuildContext context) => MediaQuery.sizeOf(context).width;
 
-  static Size screenSize = WidgetsBinding.instance.window.physicalSize;
-
-  static double getWidth(BuildContext context) =>
-      MediaQuery.sizeOf(context).width;
-
-  static double getHeight(BuildContext context) =>
+  /// Returns screen height from [MediaQuery]
+  static double height(BuildContext context) =>
       MediaQuery.sizeOf(context).height;
+
+  /// Returns the full screen [Size] from [MediaQuery]
+  static Size size(BuildContext context) => MediaQuery.sizeOf(context);
+
+  /// Returns true if the device is considered mobile based on width
+  static bool isMobile(BuildContext context) => width(context) < 600;
+
+  /// Returns true if the device is considered tablet
+  static bool isTablet(BuildContext context) =>
+      width(context) >= 600 && width(context) < 1024;
+
+  /// Returns true if the device is considered desktop
+  static bool isDesktop(BuildContext context) => width(context) >= 1024;
 }
