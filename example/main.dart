@@ -12,9 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'App Style Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const HomeScreen(),
     );
   }
@@ -29,10 +27,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Styles Demo',
-          style: AppTextStyles.titleWhite,
-        ),
+        title: const Text('Styles Demo', style: AppTextStyles.titleWhite),
         backgroundColor: Colors.blueAccent,
       ),
       body: Padding(
@@ -53,10 +48,7 @@ class HomeScreen extends StatelessWidget {
                 borderRadius: BorderRadiusStyle.all(radius: 20),
               ),
               child: const Center(
-                child: Text(
-                  'Styled Container',
-                  style: AppTextStyles.white16,
-                ),
+                child: Text('Styled Container', style: AppTextStyles.white16),
               ),
             ),
           ],
