@@ -16,6 +16,8 @@ A Flutter package that provides predefined styles for text, padding, border radi
 Add the following line to your `pubspec.yaml`:
 
 ```yaml
+resolution: workspace
+
 dependencies:
   app_style: latest_version
 ```
