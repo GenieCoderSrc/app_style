@@ -16,9 +16,9 @@ abstract class BorderRadiusStyle {
 
   /// Custom top-left and top-right radius only.
   static BorderRadius topCorners({double radius = 15.0}) => BorderRadius.only(
-    topLeft: Radius.circular(radius),
-    topRight: Radius.circular(radius),
-  );
+        topLeft: Radius.circular(radius),
+        topRight: Radius.circular(radius),
+      );
 
   /// Custom bottom-left and bottom-right radius only.
   static BorderRadius bottomCorners({double radius = 15.0}) =>
